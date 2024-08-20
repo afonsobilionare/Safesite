@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteção de Conteúdo</title>
+    <link rel="icon" href="renew.png" type="image/png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            user-select: none; /* Desabilita a seleção de texto */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 40px; /* Tamanho do ícone */
+            height: auto;
+            margin-right: 10px;
+            border-radius: 7px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+        h2, h3 {
+            color: #2c3e50;
+        }
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para ocultar o conteúdo */
+        .hidden-content {
+            display: none;
+        }
+        /* Estilo para a mensagem de alerta */
+        .alert {
+            display: none;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        // Desabilita o botão direito do mouse
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Detecta se as ferramentas de desenvolvedor são abertas
+        function detectDevTools() {
+            const threshold = 160; // Largura mínima do DevTools
+            const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+            const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+
+            if (widthThreshold || heightThreshold) {
+                // Oculta o conteúdo da página
+                document.querySelector('.container').classList.add('hidden-content');
+                // Exibe a mensagem de alerta
+                document.querySelector('.alert').style.display = 'block';
+            }
+        }
+
+        // Detecta se as ferramentas de desenvolvedor são abertas a cada segundo
+        setInterval(detectDevTools, 1000);
+    </script>
+</head>
+<body>
+    <div class="alert">Ferramentas de desenvolvedor detectadas! O conteúdo foi ocultado.</div>
+    <div class="container">
+        <div class="header">
+            <img src="renew.png" alt="Ícone de Privacidade">
+            <h1>Política de Privacidade</h1>
+        </div>
+
+        <h2>Última atualização: 01/09/2024</h2>
+        
+        <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como o AmindBuild lida com as informações que você fornece ao utilizar nosso aplicativo. Por favor, leia atentamente esta política para entender como suas informações são tratadas.</p>
+        
+        <h3>Informações que Coletamos</h3> 
+        
+        <p>Nosso aplicativo, AMindBuild, é um aplicativo de conhecimento que funciona totalmente offline. Isso significa que não coletamos nenhuma informação pessoal ou dados dos usuários diretamente através do aplicativo. Todo o conteúdo e informações estão armazenados localmente no aplicativo e não são enviados a servidores externos ou bancos de dados.</p>
+        
+        <h3>Uso de Informações</h3> 
+        
+        <p>Como não coletamos dados pessoais ou informações do usuário diretamente no aplicativo, não utilizamos informações para nenhum propósito, seja para análise, marketing ou outras finalidades. No entanto, se você entrar em contato conosco através do Instagram para fornecer feedback, as informações fornecidas por você estarão sujeitas às políticas de privacidade do Instagram.</p>
+        
+        <h3>Compartilhamento de Informações</h3>
+        
+        <p>Uma vez que não coletamos informações pessoais diretamente através do aplicativo, não compartilhamos nenhuma informação com terceiros. No entanto, se você optar por fornecer feedback através do Instagram, as informações compartilhadas por você nesse canal estarão sujeitas às políticas de privacidade do Instagram e poderão ser usadas de acordo com as regras e práticas da plataforma.</p>
+        
+        <h3>Segurança</h3> 
+        
+        <p>Embora não armazenemos informações pessoais no aplicativo, tomamos precauções para proteger o conteúdo dentro do aplicativo contra acesso não autorizado e alterações. No entanto, é importante lembrar que nenhuma transmissão de dados pela internet ou sistema de armazenamento eletrônico é 100% segura.</p>
+        
+        <h3>Atualizações da Política de Privacidade</h3>
+        
+        <p>Podemos atualizar esta Política de Privacidade ocasionalmente para refletir mudanças nas práticas ou por outros motivos operacionais, legais ou regulamentares. Recomendamos que você verifique esta página periodicamente para se manter informado sobre quaisquer alterações.</p>
+        
+        <h3>Seus Direitos</h3> 
+        
+        <p>Como não coletamos informações pessoais diretamente no aplicativo, não há dados pessoais sob nossa posse para os quais você possa solicitar acesso, correção ou exclusão. Se você tiver dúvidas sobre esta política ou sobre o uso do AmindBuild, não hesite em entrar em contato conosco.</p>
+        
+        <h3>Contato</h3> 
+        
+        <p>Se você tiver alguma dúvida sobre esta Política de Privacidade ou sobre o uso do AMindBuild, entre em contato conosco pelo e-mail: <a href="mailto:diretordetecnologia12@gmail.com">diretordetecnologia12@gmail.com</a>. Se você desejar fornecer feedback e entrar em contato através do Instagram, esteja ciente de que as informações que você compartilhar nesse canal estarão sujeitas às políticas de privacidade do Instagram.</p>
+    </div>
+</body>
+</html>
